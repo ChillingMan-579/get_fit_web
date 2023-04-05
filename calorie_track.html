@@ -16,7 +16,7 @@
     <div class="header" style="position:fixed; width:99vw;">
         <div class="logo">
             <img src="Emblem_of_Canisius_College.png" alt="Canisius College Logo" style="width: 5%;">
-            Berkendara Motor Baik dan Benar
+            kama pona
         </div>
         <div class="links">
             <ul>
@@ -30,30 +30,56 @@
         <div class="title">Calorie Tracker</div>
         <div class="container-track">
             <div class="choices">
-                <div class="name">Food Name</div> <!--document.getElementById("rice").innerText-->
-                <div class="quantity">Qty(gr)</div>
-                <div class="nothing" style="color: #212529;">adddd</div>
+                <div id="target-cal-text" class="target-name">Target Calories</div>
+                <input id="target-cal" class="target-cal">
             </div>
             <div class="choices">
-                <div id="rice-name" class="name">Rice</div> <!--document.getElementById("rice").innerText-->
+                <div class="name">Food Name</div> <!--document.getElementById("rice").innerText-->
+                <div id="cal" class="cal">Cal</div>
+                <div class="serving">Serving Size</div>
+                <div class="quantity">Qty</div>
+                <div class="nothing" style="color: #212529;"> sfsfsfsfs</div>
+            </div>
+            <div class="choices">
+                <div id="rice-name" class="name">White Rice</div> <!--document.getElementById("rice").innerText-->
+                <div id="rice-cal" class="cal">130</div>
+                <div class="serving">100</div>
                 <input id="rice-quantity" class="quantity">
-                <button id="rice-btn">Add</button>
+                <button id="rice-btn" onclick="countRice()">Add</button>
             </div>
             <div class="choices">
                 <div id="beef-name" class="name">Ground Beef</div>
+                <div id="beef-cal" class="cal">300</div>
+                <div class="serving">100</div>
                 <input id="beef-quantity" class="quantity">
-                <button id="beef-btn">Add</button>
+                <button id="beef-btn" onclick="countBeef()">Add</button>
             </div>
             <div class="choices">
                 <div id="chicken-name" class="name">Chicken Breast</div>
+                <div id="chicken-cal" class="cal">165</div>
+                <div class="serving">100</div>
                 <input id="chicken-quantity" class="quantity">
-                <button id="chicken-btn">Add</button>
+                <button id="chicken-btn" onclick="countChicken()">Add</button>
+            </div>
+            <div class="choices">
+                <div id="milk-name" class="name">Full Cream Milk</div>
+                <div id="milk-cal" class="cal">60</div>
+                <div class="serving">100</div>
+                <input id="milk-quantity" class="quantity">
+                <button id="milk-btn" onclick="countMilk()">Add</button>
             </div>
             <div class="choices">
                 <input id="other-name" class="name">
+                <input id="other-cal" class="cal">
+                <input id="other-serve" class="serving">
                 <input id="other-quantity" class="quantity">
-                <button id="other-btn">Add</button>
+                <button id="other-btn" onclick="countOther()">Add</button>
             </div>
+            <div class="picked">
+                Today's Meal
+            </div>
+            <button class="count-btn" onclick="count()">Count</button>
+            <div id="result"></div>
         </div>
     </div>
 </body>
