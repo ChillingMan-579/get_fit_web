@@ -14,14 +14,14 @@ body, html{
     scroll-behavior: smooth;
 }
 
-.first, .second, .prereq, .steps{
+.first, .second, .third, .fourth{
     min-height: 100vh;
 }
 
 .hidden{
     opacity: 0;
     transform: translateX(-100%);
-    transition: all  2s;
+    transition: all  1s;
 }
 
 .show{
@@ -87,155 +87,120 @@ body, html{
 
 
 .lb-title{
-    overflow: hidden;
-    position: relative;
     font-size: 2rem;
     font-weight: 600;
-    z-index: 99;
 }
 
 .lb-desc{
     width: 65%;
     font-size: 1.3rem;
-    z-index: 99;
     opacity: 1;
 }
-/*steps*/
 
-.steps{
+.third{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.penyebab, .akibat{
+    width: 50%;
+}
+
+.penyebab{
+    padding-left: 8rem;
+}
+
+.akibat{
+    padding-right: 5rem;
+}
+
+.penyebab-title, .akibat-title{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.penyebab-desc, .akibat-desc{
+    font-size: 1.5rem;
+}
+
+.fourth{
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAF8;
+    padding: 10rem 0;
+}
+
+.solusi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.solusi-title, .steam-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.solusi-desc{
+    width: 60%;
+    font-size: 1.3rem;
+    opacity: 1;
+}
+
+.steam{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
-    gap: 3rem;
-    background-color: #001933;
 }
 
-.steps-herotitle{
-    font-weight: 600;
-    font-size: 2rem;
-    color: #E5E5E5;
+.steam-title2{
+    font-size: 1.3rem;
 }
 
-.steps-content{
+.subjects{
+    padding-top: 2rem;
     display: flex;
-    width: 80%;
-    gap: 3rem;
-    padding: 1rem 0;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.steps-desc{
-    width: 44rem;
-    font-size: 1.25rem;
+.subject{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: center;
+    width: 30%;
+    min-height: 10rem;
+    margin: 1rem 1.5rem;
+    background-color: white;
+    box-shadow: -4px 6px rgba(2, 16, 56, 0.8);
+    border: 1px solid rgb(2, 16, 56);
     border-radius: 25px;
-    padding: 1rem;
+    padding: .8rem;
 }
 
-.steps-title{
-    color: #E5E5E5;
-    padding: 0.7rem 0;
+.subject .title{
+    font-size: 1.4rem;
+    color: #212529;
+    font-weight: 600;
 }
-
-.steps-desc p{
-    color: #E5E5E5;
-}
-
-.steps {
-    overflow: hidden;
-    position: relative;
-}
-  
-.steps-bg {
-    opacity: 0.4;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: auto;
-    width: 100%;
-    z-index: 0;
-}
-
-
-.steps-wrcontent {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 .footer-container{
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #001933;
+    padding: 1.5rem;
     align-items: center;
-    background-color: #1F2937;
-    padding: 23px;
-    color: #E5E5E5;
-    z-index: 99;
 }
-
 .left{
+    color: #F9FAF8;
     display: flex;
 }
-
-/*prereq*/
-.prereq{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
-    background-color: #F9FAF8;
-}
-
-.prereq-title{
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.prereq-list{
-    width: 50%;
-}
-
-.prereq li{
-    padding: 1.25rem;
-}
-
-mark{
-    background-color: yellow;
-}
-
-.traffic-signs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    gap: 1rem;
-    padding: 3rem;
-    z-index: 99;
-    background-color: #F9FAF8;
-}
-
-.traffic-signs-title{
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-.traffic-signs-content{
-    width: 50%;
-}
-
-.traffic-signs img{
-    width: 650px;
+.left ul{
+    padding-left: 1.5rem;
 }
 
 @font-face {
