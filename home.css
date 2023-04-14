@@ -60,7 +60,7 @@ body, html{
 
 .first{
     display: flex;
-    background-color: #001933;
+    background-color: #171c21;
     justify-content: center;
     align-items: center;
     padding: 3rem 0 1.5rem 0;
@@ -191,7 +191,7 @@ body, html{
 .footer-container{
     display: flex;
     justify-content: space-between;
-    background-color: #001933;
+    background-color: #212529;
     padding: 1.5rem;
     align-items: center;
 }
