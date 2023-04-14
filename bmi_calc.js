@@ -3,49 +3,57 @@ const output = document.getElementById("output");
 const result = document.querySelector(".result");
 const description = document.querySelector(".description");
 const underweightDesc = `
-Symptoms
-<p> Some people who are underweight find they get sick all the time, or feel very tired. That may be because they are not getting all the nutrients they need from
-their diet. They may also find their hair gets thinner or falls out, their skin gets very dry and their teeth are affected.
-Children who are underweight may not grow as expected for their age. Things that could lead to someone being underweight for example stomach problems, 
-cancer, thyroid problems, stress, anxiety, anemia, etc.
-</p>
-Cause
+Akibat
 <p>
-Some may be born naturally small and their low BMI is due to their genes or has a very high metabolism and find it hard to put on weight, even if they eat foods that have a lot of calories.
-Some people may not follow a healthy, balanced diet because they forget to eat or they cannot afford nutritious foods. Others may not be eating properly because
-they are sick, or their medicines make them feel nauseous. Some people who do a lot of physical activity burn up more calories than they can eat, leading to their being underweight.
-Some physical conditions that may cause weight loss such as stomach problems, cancer, thyroid problems, etc. Or mental health problems that could cause weight loss for example stress, anxiety, etc.
+Kekurangan berat badan dapat menyebabkan beberapa permasalahan seperti masalah fisik, yang termasuk kulit 
+kering, rontoknya rambut, dan berpengaruh pada kesehatan gigi. Selain itu akibat lain yang dapat ditimbulkan 
+adalah seringnya lelah dan sakit dikarenakan nutrisi tubuh yang tidak mencukupi serta pertumbuhan yang 
+terganggu dan tidak optimal pada anak-anak. 
 </p>
-How to Fix it
+Penyebab
 <p>
-To gain weight you should eat nutritious foods to make sure your body gets all the nutrition it needs. You should eat food that contains carbohydrates that give 
-you energy and could help you gain weight, protein to repair your body and build muscles, and vitamins and minerals to make you healthy. The aim is to gain
-weight gradually by eating healthy foods. Even if you are underweight, try to avoid foods with a lot of added sugar, fat, and salt, like cakes, takeaway foods, 
-and sugary drinks. You also can gain weight by eating snacks between your meals. 
+Beberapa orang sudah secara memiliki metabolisme yang tinggi sejak lahir, yang mengakibatkan 
+mereka memiliki berat badan yang rendah walaupun mereka sudah berusaha makan makanan yang memiliki 
+banyak kalori, namun kekurangan berat badan juga disebabkan oleh faktor-faktor lain seperti gangguan pola 
+makan karena sakit atau gangguan mental. Beberapa orang juga dapat kekurangan berat badan akibat membakar 
+kalori lebih banyak dalam aktivitas fisik  dibandingkan yang didapatkan, dan secara umum karena pola makan 
+yang kurang baik.
+</p>
+Perawatan
+<p>
+Untuk menangani kekurangan berat badan, maka hal yang paling sederhana yang dapat dilakukan adalah 
+mengonsumsi makanan yang cukup, namun juga dengn nutrisi yang sesuai. Apabila pada awalnya tidak dapat 
+makan banyak dalam waktu yang singkat, maka juga dapat membuat pola makan yang lebih sering agar nutrisi 
+dalam tubuh tetap terjaga. Dengan mengonsumsi makanan yang lebih banyak namun tetap memiliki nutrisi 
+seimbang, maka anda dapat meningkatkan berat badan tetapi masih mempunyai fisik yang sehat. Namun jika 
+masih ada kesulitan, hal yang selalu dapat dilakukan adalah berkonsultasi pada dokter untuk menangani masalah tersebut.
 </p>`
+
 const overweightDesc = `
-Symptoms
-<p>Being overweight means that you are carrying too much weight in the form of body fat. Being overweight puts you in the highest weight range, above what’s 
-considered healthy. Being overweight also means your body weight is outside the healthy range.</p>
-Cause
-<p>Many things can cause weight gain. For most people, obesity happens gradually by taking in more energy than your body needs over time. Foods and drinks 
-contain energy (measured in kilojoules), which your body uses, especially during physical activity. The average adult needs 2,000 calories a day for women and 2,500 for men. Any extra energy you consume is stored as body fat.</p>
-<p>Other things that can cause weight gain such as your family history (the habits you grew up with and the genes you got from your parents), your surroundings 
-(what kinds of food are available and in what portions, and where you work and sleep), your metabolism (how efficiently your body turns food into energy
-certain medical conditions that cause weight gain) such as hypothyroidism
-certain medicines that cause weight gain as a side effect. 
-Stress, low mood, poor-quality sleep, changing emotions, and poor access to healthy food can all cause people to take in more calories than they need. 
+Akibat
+<p>
+Hal yang dapat ditimbulkan akibat berat badan yang berlebihan dapat termasuk rasa kelalahantidak nyaman 
+akibat banyaknya tekanan beban tubuh. Selain itu hal lain yang dapat ditimbulkan akibat berat badan yang 
+berlebihan adalah gangguan terhadap kesehatan mental, nyeri punggung, otot dan sendiri, serta juga dapat 
+menyebabkan berbagai penyakit seperti diabetes, kanker
+
 </p>
-How to Fix it
-<p>Some steps that you can take to help reduce the likelihood of obesity :
-<ol>
-<li>Eat well: Review how many high-energy, low-nutrition snack foods and sugary.
-drinks you have, including juice, soft drink, and flavored milk. Consider how often you get takeaway.</li>
-<li>Do enough physical activity: Only half of Australians do enough physical activity for good health.
-</li>
-<li>Limit alcohol: Review how much alcohol you drink (alcohol has many calories with no nutritional benefits).
-</li>
+
+Penyebab
+<
+Secara garis besar, penyebab dari berat badan yang berlebihan disebabkan oleh mengonsumsi lebih banyak 
+makanan / energi dibandingkan yang sebenarnya dibutuhkan. Selain itu hal lain yang dapat menyebabkan berat 
+badan yang berlebih adalah kebiasaan pola makan, metabolisme tubuh, masalah kesehatan mental seperti emosi 
+dan stres, kualitas tidur yang buruk, dan kurangnya mengonsumsi makanan dengan nutrisi seimbang.p>
 </p>
+
+Perawatan
+<
+Untuk menangani masalah berat badan yang berlebihan, hal umum yang dapat dilakukan adalah menjaga pola 
+makan yang teratur dan sehat, serta juga melakukan aktivitas fisik yang cukup agar energi yang dikeluarkan 
+seimbang dengan energi yang didapatkan, yang dapat ditingkatkan lagi agar secara perlahan berat badan dapat 
+diturunkan menjadi kondisi yang lebih sehatp>
+</
 `
 
 button.addEventListener("click", () =>{
@@ -71,15 +79,18 @@ button.addEventListener("click", () =>{
 
     if(height_status && weight_status){
         let bmi = ((weight / height/height)*10000).toFixed(2);
-        output.innerHTML = "Your BMI is " + bmi;
+        //output.innerHTML = "Your BMI is " + bmi;
         if(bmi < 18.5){
             result.innerHTML = `Your BMI result is ${bmi} (underweight)`
             description.innerHTML = underweightDesc;
         } else if (bmi >= 18.5 && bmi <= 25){
             result.innerHTML = `Your BMI result is ${bmi} (healthy)`
-            description.innerHTML = "Congrats! You have healthy weight. Keep eating healthy foods and keep the healthy lifestyle.";
-        } else {
+            description.innerHTML = "Selamat! Anda sudah mempunyai berat tubuh yang sehat. Tetap jaga pola makan yang teratur dan pertahankan gaya hidup yang sehat.";
+        } else if (bmi > 25 && bmi < 30){
             result.innerHTML = `Your BMI result is ${bmi} (overweigth)`
+            description.innerHTML = overweightDesc
+        } else {
+            result.innerHTML = `Your BMI result is ${bmi} (overweight - obese)`
             description.innerHTML = overweightDesc
         }
     } else {
