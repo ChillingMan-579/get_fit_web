@@ -124,10 +124,10 @@ function count()
 	console.log(totalCal)
     if(totalCal > parseInt(targetCal))
     {
-        document.getElementById("result").innerHTML = "kin la jan seme li 'olin' alasa li wile alasa e pakala jan ona, tan ona li pakala, taso tenpo lili la kama li kama. kama la ona li musi li pakala li ken pana pona tawa jan ona. sitelen la jan seme pi mi mute li pilin e ike pi sijelo ona, li kama jo e pona tan ni taso ? taso jan seme li jo e lawa poka jan ni: jan la ona li wile pilin pona lon kama pi ike ala, anu ona li wile ala pakala pi pona ala ? ante la mi mute li pana ike tawa jan pi wile pona lon tenpo ni, jan pi lukin ala tan wile en lukin ala e pakala lon tenpo kama. en ike sama tawa jan pi pali ala tan sijelo pona ala. ni la ona li sama e toki lon musi en pakala lon kama lili tan tenpo."
+        document.getElementById("result").innerHTML = "Konsumsi anda masih melebihi target kalori anda"
     }
 	else
 	{
-		document.getElementById("result").innerHTML = "sina pona a"
+		document.getElementById("result").innerHTML = "Selamat! Pada hari ini anda sudah mengonsumsi makanan kurang dari target kalori anda"
 	}
 }
