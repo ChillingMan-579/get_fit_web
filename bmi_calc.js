@@ -40,20 +40,20 @@ menyebabkan berbagai penyakit seperti diabetes, kanker
 </p>
 
 Penyebab
-<
+<p>
 Secara garis besar, penyebab dari berat badan yang berlebihan disebabkan oleh mengonsumsi lebih banyak 
 makanan / energi dibandingkan yang sebenarnya dibutuhkan. Selain itu hal lain yang dapat menyebabkan berat 
 badan yang berlebih adalah kebiasaan pola makan, metabolisme tubuh, masalah kesehatan mental seperti emosi 
-dan stres, kualitas tidur yang buruk, dan kurangnya mengonsumsi makanan dengan nutrisi seimbang.p>
+dan stres, kualitas tidur yang buruk, dan kurangnya mengonsumsi makanan dengan nutrisi seimbang.
 </p>
 
 Perawatan
-<
+<p>
 Untuk menangani masalah berat badan yang berlebihan, hal umum yang dapat dilakukan adalah menjaga pola 
 makan yang teratur dan sehat, serta juga melakukan aktivitas fisik yang cukup agar energi yang dikeluarkan 
 seimbang dengan energi yang didapatkan, yang dapat ditingkatkan lagi agar secara perlahan berat badan dapat 
-diturunkan menjadi kondisi yang lebih sehatp>
-</
+diturunkan menjadi kondisi yang lebih sehat.
+</p>
 `
 
 button.addEventListener("click", () =>{
