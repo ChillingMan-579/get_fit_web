@@ -124,7 +124,7 @@ function count()
 	console.log(totalCal)
     if(totalCal > parseInt(targetCal))
     {
-        document.getElementById("result").innerHTML = "Konsumsi anda masih melebihi target kalori anda"
+        document.getElementById("result").innerHTML = "<p>Asupan kalori yang terlalu banyak dapat menyebabkan kelebihan berat badan dan obesitas dengan permasalahannya masing-masing. Untuk mengurangi kalori yang berlebihan dan tidak melebihi batasan kalori pada besoknya, berikut ini adalah hal yang dapat dilakukan.</p> <p>Kurangi asupan kalori : Kurangilah jumlah makanan yang dikonsumsi agar asupan kalori tidak terlalu tinggi, ukur langi asupan makanan yang biasa anda konsumsi, serta jangan makan terlalu banyak dalam suatu saat saja.</p> <p>Tingkatkan aktivitas fisik : Dengan aktivitas fisik yang lebih tinggi maka tubuh dapat lebih cepat membakar kalori. Aktivitas dapat dilakukan dengan berbagai macam cara sederhana seperti jogging atau bersepeda sekeliling tempat tinggal.</p> <p>Ubahlah pola makan : Pola makan dengan makanan yang lebih sehat dan rendah kalori dapat membantu anda agar tidak melebihi batas klori yang sudah ditentukan.</p> <p>Konsultasi dengan profesional bidang kesehatan dan diet : Apabila ada berkesusahan untuk mengendalikan asupan kalori di bawah batas yang ditentukan, maka anda dapat berkonsultasi untuk mendapatkan nasihat yang lebih sesuai bagi anda terkait dengan asupan kalori anda"
     }
 	else
 	{
